@@ -1,11 +1,7 @@
 #!/bin/bash
 
-set -e  # 任意一个脚本报错就停止
-
-# 获取项目根目录：data_saver 的上一级
+set -e  
 ROOT_DIR="$(cd "$(dirname "$0")"/.. && pwd)"
-
-# 切换到项目根目录，确保 scripts 中的 run.py 能正确找到
 cd "$ROOT_DIR" || exit 1
 
 echo "=========================================="
